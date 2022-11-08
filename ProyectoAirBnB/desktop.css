@@ -1,0 +1,169 @@
+*{
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 683px;
+    /* background-repeat: no-repeat; */
+    background-image: url(./img/header.jpg);
+    justify-content: space-between;
+}
+
+nav>a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    /* background-color: aqua; */
+    align-items: center;
+    justify-content: center;
+    font-size: 14pt;
+}
+
+header>nav{
+    display: flex;
+    flex-flow: row nowrap;
+    height: 25px;
+    width: 33%;
+}
+
+#navViaje{
+    justify-content: left;
+    text-align: left;
+}
+
+#navExp{
+    justify-content: center;
+    text-align: center;
+}
+
+#navAnfitrion{
+    /* display: flex;
+    flex-flow: column wrap; */
+    justify-content: right;
+    text-align: right;
+}
+
+form{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 65%;
+    height: 80px;
+    background-color: white;
+    align-items: center;
+    margin: 0 auto auto auto;
+    justify-content: space-around;
+    border-radius: 45px;
+    box-shadow: 0px 3px 0px 0px rgb(44, 44, 44);
+}
+
+form>div{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+}
+
+form>div>label{
+    display: flex;
+    color: black;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+form>button{
+    width: 120px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: rgb(161, 12, 12);
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 0px 0px 0px;
+}
+
+#BotonLow{
+    height: 60px;
+    width: 150px;
+    background-color: white;
+    border-radius: 45px;
+}
+
+header>div{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+}
+
+header>div>p{
+    margin-bottom: 15px;
+    font-size: 14pt;
+}
+
+main>h2{
+    margin: 25px 0px 25px 15px;
+}
+
+main>div{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 25px;
+    justify-content: center;
+    min-width: 0;
+}
+
+main>div>article{
+    display: flex;
+    flex-flow: row wrap;
+    height: 150px;
+    /* flex: 0 1 0; */
+    /* background-color: aqua; */
+    /* min-width: 0;
+    min-height: 0; */
+    /* justify-content: center; */
+    margin: auto;
+    width: 20%;
+}
+
+main>div>article>div{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    gap: 45px;
+}
+
+main>div>article>div>h2{
+    text-align: center;
+}
+
+main>div>article>div>p{
+    text-align: center;
+}
+
+main>div>article>img{
+    width: 50%;
+    height: 150px;
+    /* flex: 200px 0 0; */
+    /* width: 100px; */
+}
+
+/* main>div>article>h2{
+    width: 50%;
+    height: 50px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+main>div>article>p{
+    width: 30%;
+    height: 50px;
+    padding-bottom: 10px;
+    text-align: center;  
+} */
