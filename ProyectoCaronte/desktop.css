@@ -8,37 +8,6 @@ header{
     justify-content: space-between;
 }
 
-#titulo{
-    display: flex;
-    flex-flow: row nowrap;
-    width: 100%;
-    background-color: orange;
-    padding: 10px;
-    padding-left: 5px;
-    color: white;
-    justify-content: c;
-}
-
-#titulo>h1{
-    font-size: 25pt;
-    font-weight:bolder;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 50%;
-}
-
-#titulo>nav{
-    display: flex;
-    flex-flow: row nowrap;
-    width: 50%;
-    justify-content: right;
-    align-items: center;
-}
-
-#titulo>nav>a{
-    text-decoration: none;
-    padding: 5px;
-}
-
 #headerLargo>a>i{
     display: flex;
     color: green;
@@ -62,7 +31,7 @@ h2{
 #headerTopInfo{
     display: flex;
     background-color: white; 
-    width: 70%;
+    width: 75%;
     justify-content: left;
 }
 
@@ -80,8 +49,10 @@ h2{
 
 #headerTopSociales{
     display: flex;
-    width: 15%;
+    width: 25%;
+    /* min-width: 300px; */
     justify-content: right;
+    align-items: flex-end;
 }
 
 #headerTopSociales>a{
@@ -90,6 +61,27 @@ h2{
 
 #headerTopSociales>a>i{
     color: black;
+}
+
+#headerLargoMobile{
+    width: 100%;
+    display: none;
+    background-color: black;
+}
+
+#headerLargoMobile>figure>p{
+    color: white;
+    font-size: 30pt;
+}
+
+#headerLargoMobile>a{
+    width: 99%;
+    margin: auto;
+    color: white;
+    font-size: 26pt;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 5px;
 }
 
 #headerLargo{
@@ -127,15 +119,15 @@ h2{
 /* --------------------------------- */
 
 #headerLargo>a{
+    width: 10%;
     color: white;
     font-size: 14pt;
     display: flex;
     flex-flow: column wrap;
-    padding: 60px;
+    padding: 50px;
     text-decoration: none;
     text-align: center;
 }
-
 
 #headerLargo>figure{
     display: flex;
@@ -146,7 +138,8 @@ h2{
 }
 
 #headerLargo>figure>img{
-    width: 50%;
+    width: 80%;
+    min-width: 130px;
     margin: auto;
     justify-content: center;
 }
@@ -157,17 +150,51 @@ h2{
     text-align: center;
 }
 
-main{
+#titulo{
     display: flex;
-    flex-flow: row wrap;
-    width: 90%;
-    margin: auto;
-    margin-top: 5px;
-    justify-content: space-between;
-    gap: 10px;
+    flex-flow: row nowrap;
+    width: 100%;
+    background-color: orange;
+    padding: 10px;
+    padding-left: 5px;
+    color: white;
+    margin-bottom: 5px;
 }
 
-main>article{
+#titulo>h1{
+    font-size: 25pt;
+    font-weight:bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 50%;
+}
+
+#titulo>nav{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 50%;
+    justify-content: right;
+    align-items: center;
+}
+
+#titulo>nav>a{
+    text-decoration: none;
+    padding: 5px;
+}
+
+main{
+    width: 100%;
+}
+
+main>div{
+    width: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+main>div>article{
     display: flex;
     flex-flow: column wrap;
     border: 3px solid black;
@@ -185,4 +212,110 @@ article>p{
 article>img{
     max-width: 150px;
     margin: auto;
+}
+
+@media (min-width: 0px) and (max-width: 599px){
+    #headerTopInfo{
+        display: none;
+    }
+    #headerTopSociales{
+        width: 100%;
+        border: 3px solid black;
+        padding: 10px;
+        gap: 5px;
+    }
+    #headerTopSociales>a{
+        padding: 5px;
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+    #headerLargo{
+        display: none;
+    }
+    #headerLargoMobile{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        padding: 10px;
+    }
+    #headerLargoMobile>figure{
+        flex-shrink: 0;
+       width: 100%;
+       display: flex;
+       flex-flow: row wrap;
+       justify-content: center;
+       align-items: center;
+       margin: auto;
+       padding: 10px;
+    }
+    #headerLargoMobile>figure>img{
+        width: 100px;
+     }
+    main>div{
+        flex-flow: column nowrap;
+    }
+    main>div>article{
+        width: 100%;
+    }
+    main{
+        margin: 0;
+    }
+    main>div{
+        width: 100%;
+        gap: 4px;
+    }
+    main>div>article{
+        flex-flow: row nowrap;
+    }
+    main>div>article{
+        width: 100%;    
+    }
+    main>div>article>p{
+        line-height: 20px;    
+    }
+    main>div>article>img{
+        width: 100px;
+    }
+    #titulo{
+        flex-flow: column wrap;
+    }
+    #titulo>h1{
+        width: 100%;
+    }
+    #titulo>nav{
+        width: 100%;
+        justify-content: left;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 999px){
+    #headerTopInfo{
+        width: 100%;
+    }
+    #headerTopSociales{
+        width: 100%;
+    }
+    #headerLargo{
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    #headerLargo>figure{
+        flex-shrink: 0;
+        width: 100%;
+    }
+    #headerLargo>figure>img{
+        width: 20%;
+    }
+    #headerLargo>a{
+        flex-shrink: 0;
+        width: 15%;
+    } 
+}
+
+@media (min-width: 1000px){
+
 }
