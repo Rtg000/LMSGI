@@ -8,7 +8,110 @@ header{
     justify-content: space-between;
 }
 
-<<<<<<< HEAD
+i>p{
+    margin: auto;
+    color: white;
+    font-size: 10pt;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+h2{
+    color: blue;
+    font-size: 20pt;
+    padding-bottom: 5px;
+}
+
+#headerTopInfo{
+    display: flex;
+    background-color: white; 
+    width: 75%;
+    justify-content: left;
+}
+
+#headerTopInfo>a{
+    text-decoration: none;
+    color: black;
+    /* padding: 10px 5px 10px 0px; */
+    padding: 25px;
+}
+
+#headerTopInfo>a>i{
+    color: black;
+    padding-right: 5px;
+}
+
+#headerTopSociales{
+    display: flex;
+    width: 25%;
+    /* min-width: 300px; */
+    justify-content: right;
+    align-items: flex-end;
+}
+
+#headerTopSociales>a{
+    padding: 15px;
+}
+
+#headerTopSociales>a>i{
+    color: black;
+}
+
+#headerLargo{
+    display: flex;
+    /* justify-content: space-evenly; */
+    width: 100%;
+    flex-flow: row nowrap;
+    background-color: rgb(0, 0, 0);
+    justify-content: space-around;
+}
+
+#headerLargo>a{
+    width: 10%;
+    color: white;
+    font-size: 14pt;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 50px;
+    text-decoration: none;
+    text-align: center;
+}
+
+#headerLargo>a>i{
+    display: flex;
+    color: green;
+    margin: auto;
+    align-items: center;
+}
+
+#headerLargo>#imagenCaronte>#Menu{
+    color: white;
+    justify-content: flex-end;
+    margin-right: 0;
+}
+
+#headerLargo>#imagenCaronte{
+    display: flex;
+    flex-flow: column wrap;
+    padding: 15px 10px 10px 10px;
+    justify-content: center;
+    width: 15%;
+}
+
+#headerLargo>#imagenCaronte>img{
+    width: 80%;
+    min-width: 130px;
+    margin: auto;
+    justify-content: center;
+}
+
+#headerLargo>#imagenCaronte>p{
+    color: white;
+    font-size: 16pt;
+    text-align: center;
+    font-weight: bolder;
+}
+
 #titulo{
     display: flex;
     flex-flow: row nowrap;
@@ -17,7 +120,7 @@ header{
     padding: 10px;
     padding-left: 5px;
     color: white;
-    justify-content: c;
+    margin-bottom: 5px;
 }
 
 #titulo>h1{
@@ -40,137 +143,20 @@ header{
     padding: 5px;
 }
 
-#headerLargo>a>i{
-    display: flex;
-    color: green;
-    margin: auto;
-    align-items: center;
-}
-
-=======
->>>>>>> bcc9707 (commitCaronteResponsiveV2)
-i>p{
-    margin: auto;
-    color: white;
-    font-size: 10pt;
-    font-family:'Times New Roman', Times, serif;
-    text-align: center;
-}
-
-h2{
-    color: blue;
-    font-size: 20pt;
-    padding-bottom: 5px;
-}
-
-#headerTopInfo{
-    display: flex;
-    background-color: white; 
-    width: 70%;
-    justify-content: left;
-}
-
-#headerTopInfo>a{
-    text-decoration: none;
-    color: black;
-    /* padding: 10px 5px 10px 0px; */
-    padding: 25px;
-}
-
-#headerTopInfo>a>i{
-    color: black;
-    padding-right: 5px;
-}
-
-#headerTopSociales{
-    display: flex;
-    width: 15%;
-    justify-content: right;
-}
-
-#headerTopSociales>a{
-    padding: 15px;
-}
-
-#headerTopSociales>a>i{
-    color: black;
-}
-
-#headerLargo{
-    display: flex;
-    /* justify-content: space-evenly; */
-    width: 100%;
-    flex-flow: row nowrap;
-    background-color: rgb(0, 0, 0);
-    justify-content: space-around;
-}
-
-#headerLargo>a{
-    color: white;
-    font-size: 14pt;
-    display: flex;
-    flex-flow: column wrap;
-    padding: 60px;
-    text-decoration: none;
-    text-align: center;
-}
-
-<<<<<<< HEAD
-
-#headerLargo>figure{
-=======
-#headerLargo>a>i{
-    display: flex;
-    color: green;
-    margin: auto;
-    align-items: center;
-}
-
-#headerLargo>#imagenCaronte>#Menu{
-    color: white;
-    justify-content: flex-end;
-    margin-right: 0;
-}
-
-#headerLargo>#imagenCaronte{
->>>>>>> bcc9707 (commitCaronteResponsiveV2)
-    display: flex;
-    flex-flow: column wrap;
-    padding: 15px 10px 10px 10px;
-    justify-content: center;
-    width: 15%;
-}
-
-<<<<<<< HEAD
-#headerLargo>figure>img{
-    width: 50%;
-=======
-#headerLargo>#imagenCaronte>img{
-    width: 80%;
-    min-width: 130px;
->>>>>>> bcc9707 (commitCaronteResponsiveV2)
-    margin: auto;
-    justify-content: center;
-}
-
-#headerLargo>#imagenCaronte>p{
-    color: white;
-    font-size: 16pt;
-    text-align: center;
-    font-weight: bolder;
-}
-
 main{
+    width: 100%;
+}
+
+main>div{
+    width: 90%;
     display: flex;
     flex-flow: row wrap;
-    width: 90%;
-    margin: auto;
-    margin-top: 5px;
-    justify-content: space-between;
     gap: 10px;
+    margin: auto;
+    justify-content: space-between;
 }
 
-main>article{
+main>div>article{
     display: flex;
     flex-flow: column wrap;
     border: 3px solid black;
@@ -188,8 +174,6 @@ article>div>p{
 article>img{
     max-width: 150px;
     margin: auto;
-<<<<<<< HEAD
-=======
 }
 
 @media (min-width: 0px) and (max-width: 599px){
@@ -364,5 +348,4 @@ article>img{
     #headerLargo>a>span{
         transition: all 1s;
     }
->>>>>>> bcc9707 (commitCaronteResponsiveV2)
 }
