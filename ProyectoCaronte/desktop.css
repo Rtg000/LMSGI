@@ -8,13 +8,6 @@ header{
     justify-content: space-between;
 }
 
-#headerLargo>a>i{
-    display: flex;
-    color: green;
-    margin: auto;
-    align-items: center;
-}
-
 i>p{
     margin: auto;
     color: white;
@@ -26,6 +19,7 @@ i>p{
 h2{
     color: blue;
     font-size: 20pt;
+    padding-bottom: 5px;
 }
 
 #headerTopInfo{
@@ -63,27 +57,6 @@ h2{
     color: black;
 }
 
-#headerLargoMobile{
-    width: 100%;
-    display: none;
-    background-color: black;
-}
-
-#headerLargoMobile>figure>p{
-    color: white;
-    font-size: 30pt;
-}
-
-#headerLargoMobile>a{
-    width: 99%;
-    margin: auto;
-    color: white;
-    font-size: 26pt;
-    text-decoration: none;
-    border: 1px solid white;
-    padding: 5px;
-}
-
 #headerLargo{
     display: flex;
     /* justify-content: space-evenly; */
@@ -92,31 +65,6 @@ h2{
     background-color: rgb(0, 0, 0);
     justify-content: space-around;
 }
-
-/* ---------  Animaciones --------- */
-
-#headerLargo>a:hover>i{
-    transition: 1s;
-    color: red;
-    transform: translateY(45px);
-}
-
-#headerLargo>a:hover>span{
-    transition: 1s;
-    color: blue;
-    transform: translateY(-45px);
-
-}
-
-#headerLargo>a>i{
-    transition: all 1s;
-}
-
-#headerLargo>a>span{
-    transition: all 1s;
-}
-
-/* --------------------------------- */
 
 #headerLargo>a{
     width: 10%;
@@ -129,25 +77,39 @@ h2{
     text-align: center;
 }
 
-#headerLargo>figure{
+#headerLargo>a>i{
+    display: flex;
+    color: green;
+    margin: auto;
+    align-items: center;
+}
+
+#headerLargo>#imagenCaronte>#Menu{
+    color: white;
+    justify-content: flex-end;
+    margin-right: 0;
+}
+
+#headerLargo>#imagenCaronte{
     display: flex;
     flex-flow: column wrap;
-    padding: 10px;
+    padding: 15px 10px 10px 10px;
     justify-content: center;
     width: 15%;
 }
 
-#headerLargo>figure>img{
+#headerLargo>#imagenCaronte>img{
     width: 80%;
     min-width: 130px;
     margin: auto;
     justify-content: center;
 }
 
-#headerLargo>figure>p{
+#headerLargo>#imagenCaronte>p{
     color: white;
-    font-size: 14pt;
+    font-size: 16pt;
     text-align: center;
+    font-weight: bolder;
 }
 
 #titulo{
@@ -203,7 +165,7 @@ main>div>article{
     width: 30%;
 }
 
-article>p{
+article>div>p{
     text-indent: 25px;
     font-family:Georgia, 'Times New Roman', Times, serif;
     line-height: 35px;
@@ -229,10 +191,10 @@ article>img{
         border: 2px solid black;
         border-radius: 5px;
     }
-    #headerLargo{
+    #headerLargo>#PortFolio{
         display: none;
     }
-    #headerLargoMobile{
+    #headerLargo{
         display: flex;
         flex-flow: column wrap;
         justify-content: center;
@@ -240,19 +202,33 @@ article>img{
         margin: auto;
         padding: 10px;
     }
-    #headerLargoMobile>figure{
+    #headerLargo>#imagenCaronte{
         flex-shrink: 0;
-       width: 100%;
-       display: flex;
-       flex-flow: row wrap;
-       justify-content: center;
-       align-items: center;
-       margin: auto;
-       padding: 10px;
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: left;
+        align-items: center;
+        padding: 15px 10px 20px 10px;
     }
-    #headerLargoMobile>figure>img{
-        width: 100px;
-     }
+    #headerLargo>#imagenCaronte>p{
+        font-size: 25pt;
+    }
+    #headerLargo>#imagenCaronte>img{
+        width: 25%;
+        min-width: 20px;
+        margin: 0 5px 0 0;
+    }
+    #headerLargo>a:not(#imagenCaronte){
+        width: 100%;
+        border: 1px solid white;
+        padding: 7px;
+        text-align: left;
+        font-size: 20pt;
+    }
+    #headerLargo>a>i:not(#Menu){
+        display: none;
+    }
     main>div{
         flex-flow: column nowrap;
     }
@@ -266,14 +242,17 @@ article>img{
         width: 100%;
         gap: 4px;
     }
+    main>div>article>div{
+        width: 70%;
+    }
     main>div>article{
         flex-flow: row nowrap;
     }
     main>div>article{
         width: 100%;    
     }
-    main>div>article>p{
-        line-height: 20px;    
+    main>div>article>div>p{
+        line-height: 20px;   
     }
     main>div>article>img{
         width: 100px;
@@ -301,21 +280,72 @@ article>img{
         flex-flow: row wrap;
         align-items: center;
         justify-content: center;
-        margin: auto;
+        /* margin: auto; */
     }
-    #headerLargo>figure{
+    #headerLargo>#imagenCaronte{
+        display: flex;
+        flex-flow: row wrap;
         flex-shrink: 0;
         width: 100%;
+        align-items: center;
     }
-    #headerLargo>figure>img{
+    #headerLargo>#imagenCaronte>p{
+        width: 53%;
+        font-size: 30pt;
+    }
+    #headerLargo>#imagenCaronte>img{
         width: 20%;
+        margin: 0;
     }
     #headerLargo>a{
         flex-shrink: 0;
         width: 15%;
+        padding: 40px;
     } 
+    #headerLargo>#imagenCaronte>#Menu{
+        display: none;
+    }
+    #headerLargo>a:hover>i{
+        transition: 1s;
+        color: red;
+        transform: translateY(45px);
+    }
+    #headerLargo>a:hover>span{
+        transition: 1s;
+        color: blue;
+        transform: translateY(-45px);
+    
+    }
+    #headerLargo>a>i{
+        transition: all 1s;
+    }
+    #headerLargo>a>span{
+        transition: all 1s;
+    }
+    main>div>article{
+        width: 45%;
+    }
 }
 
 @media (min-width: 1000px){
-
+    #headerLargo>a:hover>i{
+        transition: 1s;
+        color: red;
+        transform: translateY(45px);
+    }
+    #headerLargo>a:hover>span{
+        transition: 1s;
+        color: blue;
+        transform: translateY(-45px);
+    
+    }
+    #headerLargo>a>i{
+        transition: all 1s;
+    }
+    #headerLargo>#imagenCaronte>#Menu{
+        display: none;
+    }
+    #headerLargo>a>span{
+        transition: all 1s;
+    }
 }
