@@ -8,6 +8,7 @@ header{
     justify-content: space-between;
 }
 
+<<<<<<< HEAD
 #titulo{
     display: flex;
     flex-flow: row nowrap;
@@ -46,6 +47,8 @@ header{
     align-items: center;
 }
 
+=======
+>>>>>>> bcc9707 (commitCaronteResponsiveV2)
 i>p{
     margin: auto;
     color: white;
@@ -57,6 +60,7 @@ i>p{
 h2{
     color: blue;
     font-size: 20pt;
+    padding-bottom: 5px;
 }
 
 #headerTopInfo{
@@ -101,31 +105,6 @@ h2{
     justify-content: space-around;
 }
 
-/* ---------  Animaciones --------- */
-
-#headerLargo>a:hover>i{
-    transition: 1s;
-    color: red;
-    transform: translateY(45px);
-}
-
-#headerLargo>a:hover>span{
-    transition: 1s;
-    color: blue;
-    transform: translateY(-45px);
-
-}
-
-#headerLargo>a>i{
-    transition: all 1s;
-}
-
-#headerLargo>a>span{
-    transition: all 1s;
-}
-
-/* --------------------------------- */
-
 #headerLargo>a{
     color: white;
     font-size: 14pt;
@@ -136,25 +115,49 @@ h2{
     text-align: center;
 }
 
+<<<<<<< HEAD
 
 #headerLargo>figure{
+=======
+#headerLargo>a>i{
+    display: flex;
+    color: green;
+    margin: auto;
+    align-items: center;
+}
+
+#headerLargo>#imagenCaronte>#Menu{
+    color: white;
+    justify-content: flex-end;
+    margin-right: 0;
+}
+
+#headerLargo>#imagenCaronte{
+>>>>>>> bcc9707 (commitCaronteResponsiveV2)
     display: flex;
     flex-flow: column wrap;
-    padding: 10px;
+    padding: 15px 10px 10px 10px;
     justify-content: center;
     width: 15%;
 }
 
+<<<<<<< HEAD
 #headerLargo>figure>img{
     width: 50%;
+=======
+#headerLargo>#imagenCaronte>img{
+    width: 80%;
+    min-width: 130px;
+>>>>>>> bcc9707 (commitCaronteResponsiveV2)
     margin: auto;
     justify-content: center;
 }
 
-#headerLargo>figure>p{
+#headerLargo>#imagenCaronte>p{
     color: white;
-    font-size: 14pt;
+    font-size: 16pt;
     text-align: center;
+    font-weight: bolder;
 }
 
 main{
@@ -176,7 +179,7 @@ main>article{
     width: 30%;
 }
 
-article>p{
+article>div>p{
     text-indent: 25px;
     font-family:Georgia, 'Times New Roman', Times, serif;
     line-height: 35px;
@@ -185,4 +188,181 @@ article>p{
 article>img{
     max-width: 150px;
     margin: auto;
+<<<<<<< HEAD
+=======
+}
+
+@media (min-width: 0px) and (max-width: 599px){
+    #headerTopInfo{
+        display: none;
+    }
+    #headerTopSociales{
+        width: 100%;
+        border: 3px solid black;
+        padding: 10px;
+        gap: 5px;
+    }
+    #headerTopSociales>a{
+        padding: 5px;
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+    #headerLargo>#PortFolio{
+        display: none;
+    }
+    #headerLargo{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        padding: 10px;
+    }
+    #headerLargo>#imagenCaronte{
+        flex-shrink: 0;
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: left;
+        align-items: center;
+        padding: 15px 10px 20px 10px;
+    }
+    #headerLargo>#imagenCaronte>p{
+        font-size: 25pt;
+    }
+    #headerLargo>#imagenCaronte>img{
+        width: 25%;
+        min-width: 20px;
+        margin: 0 5px 0 0;
+    }
+    #headerLargo>a:not(#imagenCaronte){
+        width: 100%;
+        border: 1px solid white;
+        padding: 7px;
+        text-align: left;
+        font-size: 20pt;
+    }
+    #headerLargo>a>i:not(#Menu){
+        display: none;
+    }
+    main>div{
+        flex-flow: column nowrap;
+    }
+    main>div>article{
+        width: 100%;
+    }
+    main{
+        margin: 0;
+    }
+    main>div{
+        width: 100%;
+        gap: 4px;
+    }
+    main>div>article>div{
+        width: 70%;
+    }
+    main>div>article{
+        flex-flow: row nowrap;
+    }
+    main>div>article{
+        width: 100%;    
+    }
+    main>div>article>div>p{
+        line-height: 20px;   
+    }
+    main>div>article>img{
+        width: 100px;
+    }
+    #titulo{
+        flex-flow: column wrap;
+    }
+    #titulo>h1{
+        width: 100%;
+    }
+    #titulo>nav{
+        width: 100%;
+        justify-content: left;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 999px){
+    #headerTopInfo{
+        width: 100%;
+    }
+    #headerTopSociales{
+        width: 100%;
+    }
+    #headerLargo{
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        /* margin: auto; */
+    }
+    #headerLargo>#imagenCaronte{
+        display: flex;
+        flex-flow: row wrap;
+        flex-shrink: 0;
+        width: 100%;
+        align-items: center;
+    }
+    #headerLargo>#imagenCaronte>p{
+        width: 53%;
+        font-size: 30pt;
+    }
+    #headerLargo>#imagenCaronte>img{
+        width: 20%;
+        margin: 0;
+    }
+    #headerLargo>a{
+        flex-shrink: 0;
+        width: 15%;
+        padding: 40px;
+    } 
+    #headerLargo>#imagenCaronte>#Menu{
+        display: none;
+    }
+    #headerLargo>a:hover>i{
+        transition: 1s;
+        color: red;
+        transform: translateY(45px);
+    }
+    #headerLargo>a:hover>span{
+        transition: 1s;
+        color: blue;
+        transform: translateY(-45px);
+    
+    }
+    #headerLargo>a>i{
+        transition: all 1s;
+    }
+    #headerLargo>a>span{
+        transition: all 1s;
+    }
+    main>div>article{
+        width: 45%;
+    }
+}
+
+@media (min-width: 1000px){
+    #headerLargo>a:hover>i{
+        transition: 1s;
+        color: red;
+        transform: translateY(45px);
+    }
+    #headerLargo>a:hover>span{
+        transition: 1s;
+        color: blue;
+        transform: translateY(-45px);
+    
+    }
+    #headerLargo>a>i{
+        transition: all 1s;
+    }
+    #headerLargo>#imagenCaronte>#Menu{
+        display: none;
+    }
+    #headerLargo>a>span{
+        transition: all 1s;
+    }
+>>>>>>> bcc9707 (commitCaronteResponsiveV2)
 }
